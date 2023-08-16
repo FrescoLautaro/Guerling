@@ -18,6 +18,16 @@ header > div > h1{
     color: rgb(240, 209, 33);
     padding: 0px;
 }
+a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 5px 5px 10px rgb(64, 121, 64);
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    color: rgb(240, 209, 33);
+    padding: 0px;
+    text-decoration: none;
+}
 #buttons{
     margin-top: 70px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -85,8 +95,7 @@ footer{
 }
 
 #login{
-    margin: 10px;
-    
+    margin: 5px;
 
 }
 .contenedor{
@@ -94,20 +103,67 @@ footer{
     align-items: center;
     text-align: center;
     flex-direction: column;
-    width: 22.5vw;
-    height: 50vh;
+    width: 20vw;
+    height: 45vh;
     border-radius: 20px;
     box-shadow: 50 50 50 10px;
     background-color: rgb(218, 218, 218);
     
 }
 input{
+    border-color: rgb(240, 209, 33);
     align-items: center;
-    width: 15vw;
+    width: 15vw;    
+    height: 20px;
 }
 #usuario{
-    margin: 15px;
+    margin: 20px;
+}
+#contraseña{
+    margin: 40px;
 }
 .barra{
-    margin: 50px;
+    margin: 10px;
+}
+#boton{
+    border-radius: 25px;
+    border-color: #bbd49d;
+    background-color: rgb(240, 209, 33);
+    background: linear-gradient(to bottom right, rgb(240, 209, 33), rgb(248, 245, 71));
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+label{
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+img{
+    height:250px;
+    width: 250px;  
+    border-radius: 50%;  
+    margin-left: 15px;
+    margin-right: 15px;
+}
+h3{
+    font-family: 'Times New Roman', Times, serif;    
+    font-size: 20px;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    padding-top: 70px;
+    background: linear-gradient(to right, #2d9b64,
+                    #c28f21, #59750d, #abb92b);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+}
+#titulo{
+    font-size: 40px;
+    background: linear-gradient(to right, #096838,
+                    #664809, #59750b, #88941f);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
 }
