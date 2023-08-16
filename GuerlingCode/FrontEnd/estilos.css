@@ -68,3 +68,46 @@ footer{
     margin-bottom: 0px;
     text-align: center;
 }
+#Tittle{
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 50px;
+    margin: 10px;
+    padding: 25px;
+}
+.pagina{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login{
+    margin: 10px;
+    
+
+}
+.contenedor{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 22.5vw;
+    height: 50vh;
+    border-radius: 20px;
+    box-shadow: 50 50 50 10px;
+    background-color: rgb(218, 218, 218);
+    
+}
+input{
+    align-items: center;
+    width: 15vw;
+}
+#usuario{
+    margin: 15px;
+}
+.barra{
+    margin: 50px;
+}
