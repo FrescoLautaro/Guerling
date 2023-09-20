@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
+    <script src="juego.js"></script>
     <title>Guerling©</title>
 </head>
 
@@ -15,7 +16,7 @@
         </div>
    
     </header>
-
+    
     <body>
         <form>
             <div class="pagina">
@@ -26,21 +27,21 @@
                     <div class="barra">
                     <div id="usuario">
                         <label for=»user» style="color:rgb(0, 0, 0)"> Usuario </label>
-                        <input type=»text»  required placeholder="Nombre"/>
+                        <input type=»text»  required placeholder="Nombre" id="user"/>
                     </div>
                     <div id="contraseña">
                         <label for=»password» style="color:rgb(0, 0, 0)"> Contraseña </label>
-                        <input type="password" required placeholder="Contraseña"/>
+                        <input type="password" required placeholder="Contraseña" id="password"/>
 
                     </div>
                     </div>
                     <div id="shadow">
-                        <button id="boton" type=»submit» style> Login </button>
+                        <button id="boton" type=button onclick="login()"> Login </button>
                     </div>
                 </div>
             </div>
         </form>
-        <script type=»module» src=»./login/login.js»></script>
+        <script type=»module» src=/login.js»></script>
     </body>
 
 </html>
