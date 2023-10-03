@@ -7,7 +7,7 @@ body{
 header > div{
     font-size: 25px;
     flex-direction: row;
-    background: linear-gradient(rgb(45, 145, 95), #afc98f);
+    background: linear-gradient(rgb(45, 145, 95), #bbd49d);
 }
 header > div > h1
 {
@@ -16,8 +16,12 @@ header > div > h1
     margin: auto;
     justify-content: center;
     text-align: center;
-    color: rgb(240, 209, 33);
+    color: rgb(240, 33, 33);
     padding: 0px;
+}
+
+header:hover{
+    color: rgb(240, 209, 33);
 }
 
 a
