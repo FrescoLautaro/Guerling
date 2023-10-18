@@ -51,7 +51,7 @@ a
 #jugar{
     border-radius: 25px;
     background-color: rgb(46, 219, 11);
-    background: linear-gradient(to botom right, rgb(46, 219, 11), rgb(143, 233, 70));;
+    background: linear-gradient(to bottom right, rgb(46, 219, 11), rgb(143, 233, 70));;
     border-color: #bbd49d;
     color: rgb(3, 1, 15);
     padding: 15px 32px;
@@ -59,6 +59,8 @@ a
     text-decoration: none;
     display: inline-block;
     font-size: 30px;
+    position: relative;
+    top: -50px;
 }
 
 #registro
@@ -73,6 +75,8 @@ a
     text-decoration: none;
     display: inline-block;
     font-size: 30px;
+    position: relative;
+    top: -50px;
 }
 
 #sobrenosotros
@@ -87,6 +91,8 @@ a
     text-decoration-style: none;
     display: inline-block;
     font-size: 30px;
+    position: relative;
+    top: -50px;
 }
 
 footer
@@ -185,6 +191,9 @@ h3{
 }
 #titulo{
     font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(to right, #096838,
                     #664809, #59750b, #88941f);
             -webkit-text-fill-color: transparent;
@@ -204,14 +213,63 @@ h3{
     }
 }
 
-.carta{
+.carta1{
     width: 15vw;
     height: 40vh;
-    background-color: #ffffff;
-    border: solid white 1px;
-    border-radius: 3px;
+    background-color: rgb(46, 219, 11);
+    border: solid rgb(60, 155, 5) 3px;
+    border-radius: 10px;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    transition: all 400ms ease;
+    flex-direction: column;
 }
+
+.carta1:hover{
+    box-shadow: 5px 5px 20px grey;
+    transform: translateY(-3%);
+}
+
+
+.carta2:hover{
+    box-shadow: 5px 5px 20px grey;
+    transform: translateY(-3%);
+}
+
+
+.carta3:hover{
+    box-shadow: 5px 5px 20px grey;
+    transform: translateY(-3%);
+}
+
+.carta2{
+    width: 15vw;
+    height: 40vh;
+    background-color: rgb(240, 209, 33);
+    border: solid rgb(163, 139, 1) 3px;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: all 400ms ease;
+    flex-direction: column;
+}
+
+.carta3{
+    width: 15vw;
+    height: 40vh;
+    background-color: #636363;
+    border: solid rgb(22, 24, 21) 3px;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: all 400ms ease;
+    flex-direction: column;
+
+}
+
 .contenedor-general{
     height: 89vh;
     width: 100%;
@@ -220,4 +278,16 @@ h3{
     align-items: center;
     text-align: center;
     
+}
+
+.carta1 img{
+    width: 100px;
+}
+
+.carta2 img{
+    width: 100px;
+}
+
+.carta3 img{
+    width: 100px;
 }
