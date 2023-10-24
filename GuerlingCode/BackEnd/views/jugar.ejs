@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/jugar.css">
+    <title>Juego - Guerling©</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1><a href="/">GUERLING</a></h1>
+        </div>
+    </header>
+
+    <div id="datos" style="display:none">
+        <p id="palabra"><%= documento.palabra %></p>
+        <p id="desc"><%= documento.desc %></p>
+        <p id="pista"><%= documento.pista %></p>
+    </div>
+
+    <div class="containerJuego">
+        <!-- Tablero del juego, inicialmente con 6 filas para un juego de 5 letras y 6 intentos -->
+        <% for(let i=0; i<6; i++) { %>
+        <div class="row">
+            <input type="text" maxlength="1" class="square" readonly>
+            <input type="text" maxlength="1" class="square" readonly>
+            <input type="text" maxlength="1" class="square" readonly>
+            <input type="text" maxlength="1" class="square" readonly>
+            <input type="text" maxlength="1" class="square" readonly>
+        </div>
+        <% } %>
+
+        <!-- Teclado -->
+        <div id="containerTeclado">
+            <div class="filaTeclado">
+                <!-- Agrega más botones según las letras que necesites -->
+                <button data-key="q">q</button>
+                <button data-key="w">w</button>
+                <button data-key="e">e</button>
+                <button data-key="r">r</button>
+                <button data-key="t">t</button>
+                <button data-key="y">y</button>
+                <button data-key="u">u</button>
+                <button data-key="i">i</button>
+                <button data-key="o">o</button>
+                <button data-key="p">p</button>
+                <!-- ... -->
+            </div>
+            <!-- Puedes tener más filas de teclado si es necesario -->
+            <div class="filaTeclado">
+                <button data-key="a">a</button>
+                <button data-key="s">s</button>
+                <button data-key="d">d</button>
+                <button data-key="f">f</button>
+                <button data-key="g">g</button>
+                <button data-key="h">h</button>
+                <button data-key="j">j</button>
+                <button data-key="k">k</button>
+                <button data-key="l">l</button>
+                <button data-key="ñ">ñ</button>
+
+            </div>
+            <div class="filaTeclado">
+                <button data-key="enter" class="wide-button">Enviar</button>
+                <button data-key="z">z</button>
+                <button data-key="x">x</button>
+                <button data-key="c">c</button>
+                <button data-key="v">v</button>
+                <button data-key="b">b</button>
+                <button data-key="n">n</button>
+                <button data-key="m">m</button>
+                <button data-key="del" class="wide-button">Borrar</button>
+            </div>
+        </div>
+
+        <!-- Pista y Descripción -->
+        <div class="containerPista">
+            <button id="btnPista">Revelar Pista</button>
+            <p id="textoPista" style="display: none;"><%= documento.pista %></p>
+        </div>
+        <div class="containerDescripcion" style="display: none;">
+            <strong>Descripción:</strong>
+            <p><%= documento.desc %></p>
+        </div>
+
+    </div>
+    <div class="modal" id="victoryModal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <p>¡Has adivinado la palabra!</p>
+            <p id="victoryDesc"><%= documento.desc %></p>
+            <button onclick="location.href='/seleccionCategoria'">Seleccionar Categoría</button>
+        </div>
+    </div>
+    <div class="modal" id="loseModal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeLoseModal()">&times;</span>
+            <p>¡No has adivinado la palabra!</p>
+            <p id="loseDesc">La palabra era: <%= documento.palabra %></p>
+            <button onclick="location.href='/seleccionCategoria'">Seleccionar Categoría</button>
+        </div>
+    </div>
+    <script src="/juego.js"></script>
+</body>
+</html>

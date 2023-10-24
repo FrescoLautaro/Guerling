@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="/juego.js"></script>
+    <title>Seleccionar Categoría - Guerling©</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1><a href="/">GUERLING</a></h1>
+        </div>
+    </header>
+
+    <div class="containerCategoria">
+        <h2>Elige una categoría</h2>
+        <button onclick="seleccionarCategoria('ciencia')">ciencia</button>
+        <button onclick="seleccionarCategoria('historia')">historia</button>
+        <button onclick="seleccionarCategoria('geografia')">geografia</button>
+        <button onclick="seleccionarCategoria('informatica')">informatica</button>
+    </div>
+
+    <script>
+        function seleccionarCategoria(categoria) {
+        window.location.href = `/juego/${categoria}`;
+    }   
+    </script>
+</body>
+</html>
