@@ -20,7 +20,6 @@
     </div>
 
     <div class="containerJuego">
-        <!-- Tablero del juego, inicialmente con 6 filas para un juego de 5 letras y 6 intentos -->
         <% for(let i=0; i<6; i++) { %>
         <div class="row">
             <input type="text" maxlength="1" class="square" readonly>
@@ -34,7 +33,6 @@
         <!-- Teclado -->
         <div id="containerTeclado">
             <div class="filaTeclado">
-                <!-- Agrega más botones según las letras que necesites -->
                 <button data-key="q">q</button>
                 <button data-key="w">w</button>
                 <button data-key="e">e</button>
@@ -47,7 +45,6 @@
                 <button data-key="p">p</button>
                 <!-- ... -->
             </div>
-            <!-- Puedes tener más filas de teclado si es necesario -->
             <div class="filaTeclado">
                 <button data-key="a">a</button>
                 <button data-key="s">s</button>
