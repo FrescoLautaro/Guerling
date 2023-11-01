@@ -30,7 +30,7 @@ async function init() {
     await connectToDb();
     
     app.set("view engine", "ejs");  //Establece ejs como el motor de plantillas para renderizar las vistas.
-    app.set("views", __dirname + "/BackEnd/views");
+    app.set("views", __dirname + "/views");
     
     app.use(express.static(__dirname + '/FrontEnd'));
     app.use(bodyParser.json());
