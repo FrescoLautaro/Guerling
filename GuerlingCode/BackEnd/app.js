@@ -35,7 +35,6 @@ async function init() {
     app.use(express.static(__dirname + '/../frontend'));
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: true }));
-    app.use(express.static(__dirname + '/public'));
 
     app.get('/', (req, res) => { //cuando alguien acceda a la pagina inicial, se devolvera el index.html desde el servidor
         res.sendFile(__dirname + '/../frontend/index.html');
