@@ -49,10 +49,11 @@ a
 }
 
 #jugar{
+    border: solid rgb(22, 24, 21) 4px;
     border-radius: 25px;
     background-color: rgb(46, 219, 11);
     background: linear-gradient(to bottom right, rgb(46, 219, 11), rgb(143, 233, 70));;
-    border-color: #bbd49d;
+    border-color: rgb(22, 24, 21);
     color: rgb(3, 1, 15);
     padding: 15px 32px;
     text-align: center;
@@ -65,8 +66,9 @@ a
 
 #registro
 {
+    border: solid rgb(22, 24, 21) 4px;
     border-radius: 25px;
-    border-color: #bbd49d;
+    border-color: rgb(22, 24, 21);
     background-color: rgb(240, 209, 33);
     background: linear-gradient(to bottom right, rgb(240, 209, 33), rgb(248, 245, 71));
     color: rgb(0, 0, 0);
@@ -81,8 +83,9 @@ a
 
 #sobrenosotros
 {
+    border: solid rgb(22, 24, 21) 4px;
     border-radius: 25px;
-    border-color: #bbd49d;
+    border-color: rgb(22, 24, 21);
     background-color: rgb(148, 148, 131);
     background: linear-gradient(to bottom right, rgb(148, 148, 131), rgb(171, 172, 157));
     color: rgb(0, 0, 0);
@@ -134,7 +137,6 @@ footer
     border-radius: 20px;
     box-shadow: 50 50 50 10px;
     background-color: rgb(218, 218, 218);
-    
 }
 
 input
@@ -166,10 +168,13 @@ input
     display: inline-block;
     font-size: 20px;
 }
+
 label{
     font-size: 17px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+ /** Iconos **/
 img{
     height:250px;
     width: 250px;  
@@ -213,11 +218,12 @@ h3{
     }
 }
 
+/** Inicio**/
 .carta1{
     width: 15vw;
     height: 40vh;
     background-color: rgb(46, 219, 11);
-    border: solid rgb(60, 155, 5) 3px;
+    border: solid rgb(60, 155, 5) 4px;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -247,7 +253,7 @@ h3{
     width: 15vw;
     height: 40vh;
     background-color: rgb(240, 209, 33);
-    border: solid rgb(163, 139, 1) 3px;
+    border: solid rgb(163, 139, 1) 4px;
     border-radius: 10px;
     align-items: center;
     display: flex;
@@ -260,14 +266,85 @@ h3{
     width: 15vw;
     height: 40vh;
     background-color: #636363;
-    border: solid rgb(22, 24, 21) 3px;
+    border: solid rgb(22, 24, 21) 4px;
     border-radius: 10px;
     align-items: center;
     display: flex;
     justify-content: center;
     transition: all 400ms ease;
     flex-direction: column;
+}
 
+/** Categorias: **/
+
+
+.categoriaTitulo{
+    text-align: center;
+    justify-content: center;
+    font-size: 3rem;
+    
+
+}
+
+/** Ciencia**/
+.carta5{
+    width: 15vw;
+    height: 40vh;
+    background-color: #0e8d03;
+    border: solid rgb(22, 24, 21) 4px;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: all 400ms ease;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+/** Historia**/
+.carta6{
+    width: 15vw;
+    height: 40vh;
+    background-color:rgb(230, 245, 19) ;
+    border: solid rgb(22, 24, 21) 4px;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: all 400ms ease;
+    flex-direction: column;
+    box-shadow: #000000;
+}
+
+/** Geografia**/
+
+.carta7{
+    width: 15vw;
+    height: 40vh;
+    background-color: rgb(75, 57, 238);
+    border: solid rgb(22, 24, 21) 4px;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: all 400ms ease;
+    flex-direction: column;
+}
+
+
+/** Informatica**/
+.carta8{
+    width: 15vw;
+    height: 40vh;
+    background-color: #c416f0;
+    border: solid rgb(22, 24, 21) 4px;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: all 400ms ease;
+    flex-direction: column;
 }
 
 .contenedor-general{
@@ -277,7 +354,26 @@ h3{
     justify-content: center;
     align-items: center;
     text-align: center;
-    
+}
+
+.carta5:hover{
+    box-shadow: 5px 5px 20px grey;
+    transform: translateY(-3%);
+}
+
+.carta6:hover{
+    box-shadow: 5px 5px 20px grey;
+    transform: translateY(-3%);
+}
+
+.carta7:hover{
+    box-shadow: 5px 5px 20px grey;
+    transform: translateY(-3%);
+}
+
+.carta8:hover{
+    box-shadow: 5px 5px 20px grey;
+    transform: translateY(-3%);
 }
 
 .carta1 img{
@@ -290,4 +386,134 @@ h3{
 
 .carta3 img{
     width: 100px;
+}
+
+
+/** Botones: **/
+
+
+#ciencia
+{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 5px solid black;
+    border-radius: 25px;
+    border-color: #000000;
+    background-color: #0e8d03;
+    background: linear-gradient(to bottom right, #7fee75, #7fee75);
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration-style: none;
+    display: inline-block;
+    font-size: 40px;
+    position: relative;
+    top: -50px;
+    margin-top: 70px;
+}
+
+#historia
+{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 5px solid black;
+    border-radius: 25px;
+    border-color: #000000;
+    background-color: rgb(255, 255, 255);
+    background: linear-gradient(to bottom right, #f0f33d, #f0f33d);
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration-style: none;
+    display: inline-block;
+    font-size: 40px;
+    position: relative;
+    top: -50px;
+    margin-top: 70px;
+}
+
+#geografia
+{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 5px solid black;
+    border-radius: 25px;
+    border-color: #000000;
+    background-color: rgb(148, 148, 131);
+    background: linear-gradient(to bottom right, #3a7bf5, #3a7bf5);
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration-style: none;
+    display: inline-block;
+    font-size: 40px;
+    position: relative;
+    top: -50px;
+    margin-top: 70px;
+}
+
+#informatica
+{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 5px solid black;
+    border-radius: 25px;
+    border-color: #000000;
+    background-color: rgb(148, 148, 131);
+    background: linear-gradient(to bottom right, #ee80f1, #ee80f1);
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration-style: none;
+    display: inline-block;
+    font-size: 40px;
+    position: relative;
+    top: -50px;
+    margin-top: 70px;
+}
+
+.containerCategoria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 150px;
+    gap: 25px;
+}
+
+.planta{
+    height:100px;
+    width: 100px;  
+    border-radius: 50%;  
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.castillo{
+    height:100px;
+    width: 100px;  
+    border-radius: 50%;  
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+    justify-content: center;
+}
+
+.planeta{
+    height:100px;
+    width: 100px;  
+    border-radius: 50%;  
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+    justify-content: center;
+}
+
+.chip{
+    height:100px;
+    width: 100px;  
+    border-radius: 50%;  
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+    justify-content: center;
 }
