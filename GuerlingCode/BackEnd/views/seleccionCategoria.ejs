@@ -10,16 +10,33 @@
 <body>
     <header>
         <div>
-            <h1><a href="/">GUERLING</a></h1>
+            <h1><a href="index.html">GUERLING</a></h1>
         </div>
     </header>
 
+    <h2 class="categoriaTitulo">Elige una categoría</h2>
+
     <div class="containerCategoria">
-        <h2>Elige una categoría</h2>
-        <button onclick="seleccionarCategoria('ciencia')">ciencia</button>
-        <button onclick="seleccionarCategoria('historia')">historia</button>
-        <button onclick="seleccionarCategoria('geografia')">geografia</button>
-        <button onclick="seleccionarCategoria('informatica')">informatica</button>
+
+        <div class="carta5">
+            <button id="ciencia" onclick="seleccionarCategoria('ciencia')">Ciencia</button>
+            <img  class="planta"   src="/icon/bx-leaf.svg" alt="planta">
+        </div>
+
+        <div class="carta6">
+            <button id="historia" onclick="seleccionarCategoria('historia')">Historia</button>
+            <img  class="castillo" src="/icon/bxs-castle.svg" alt="castillo">
+        </div>
+
+        <div class="carta7">
+            <button id="geografia" onclick="seleccionarCategoria('geografia')">Geografía</button>
+            <img  class="planeta" src="/icon/bxs-planet.svg" alt="planeta">
+        </div>
+
+        <div class="carta8">
+            <button id="informatica" onclick="seleccionarCategoria('informatica')">Informática</button>
+            <img class="chip" src="/icon/bx-chip.svg" alt="chip">
+        </div>
     </div>
 
     <script>
