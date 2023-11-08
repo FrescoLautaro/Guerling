@@ -211,12 +211,7 @@ h3{
     font-family:Georgia, 'Times New Roman', Times, serif
 }
 
-@media  (max-width: 420px){
-    .contenedor{
-        width: 83vw;
-      
-    }
-}
+
 
 /** Inicio**/
 .carta1{
@@ -516,4 +511,258 @@ h3{
     margin-right: 15px;
     text-align: center;
     justify-content: center;
+}
+
+.containerCategoria{
+    display: flex;
+    height: 60vh;
+    width: 100%;
+    flex-direction: column;
+    font-size: 2rem;
+
+}
+
+
+.containerCartas{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 80vw;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+@media(max-width: 768px) {
+    .containerCategoria{
+      
+        gap: 10px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        justify-content: space-around;
+      
+        
+    }
+h2{
+    font-size: 50px;
+    position: relative;
+    top: -100px;
+    text-align: center;
+}
+    .containerCartas{
+        display: flex;
+        flex-direction: column;
+    }
+ 
+    button{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        width: auto;
+        align-items: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        
+    }
+    .carta5{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vh !important;
+        height: 50vh;
+        margin-top: 2rem;
+        
+    }
+
+    .carta6{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vh !important;
+        height: 50vh;
+        margin-top: 2rem;
+    }
+
+    .carta7{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vh !important;
+        height: 50vh;
+        margin-top: 2rem;
+    }
+
+    .carta8{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vh !important;
+        height: 50vh;
+        margin-top: 2rem;
+    }
+    .square{
+        width: 15vw;
+        height: 15vw;
+    }
+    .planta{
+        width: 90px;
+        height: 90px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-bottom: auto;
+    }
+
+    .planeta{
+        width: 90px;
+        height: 90px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-bottom: auto;
+    }
+
+    .castillo{
+        width: 90px;
+        height: 90px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-bottom: auto;
+    }
+
+    .chip{
+        width: 90px;
+        height: 90px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-bottom: auto;
+    }
+
+   
+    
+}
+@media(max-width: 375px) {
+    .containerCategoria{
+      
+        gap: 10px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        justify-content: space-around;
+      
+        
+    }
+h2{
+    font-size: 40px;
+    position: relative;
+    top: -180px;
+    text-align: center;
+}
+    .containerCartas{
+        display: flex;
+        flex-direction: column;
+       
+    }
+ 
+    button{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        width: auto;
+        align-items: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        
+    }
+    .carta5{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vh !important;
+        height: 50vh;
+        margin-top: 2rem;
+        
+    }
+
+    .carta6{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vh !important;
+        height: 50vh;
+        margin-top: 2rem;
+    }
+
+    .carta7{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vh !important;
+        height: 50vh;
+        margin-top: 2rem;
+    }
+
+    .carta8{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vh !important;
+        height: 50vh;
+        margin-top: 2rem;
+    }
+    .square{
+        width: 15vw;
+        height: 15vw;
+    }
+    .planta{
+        width: 90px;
+        height: 90px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-bottom: auto;
+    }
+
+    .planeta{
+        width: 90px;
+        height: 90px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-bottom: auto;
+    }
+
+    .castillo{
+        width: 90px;
+        height: 90px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-bottom: auto;
+    }
+
+    .chip{
+        width: 90px;
+        height: 90px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-bottom: auto;
+    }
+
+   
+    
 }
