@@ -1,17 +1,22 @@
-.containerJuego{
+body{
+    background-color: #bbd49d;
+}
+
+.containerJuego {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
-.row{
+.row {
     display: flex;
     gap: 10px;
     margin-bottom: 10px;
 }
 
-.square{
+.square {
     width: 80px;
     height: 80px;
     border: none;
@@ -23,13 +28,13 @@
     text-align: center;
 }
 
-.resultado{
+.resultado {
     text-align: center;
     font-size: 35px;
     margin-top: 35px;
 }
 
-.botonReiniciar{
+.botonReiniciar {
     width: 170px;
     height: 60px;
     border-radius: 15px;
@@ -37,40 +42,39 @@
     background-color: rgb(10, 163, 10);
     font-size: 30px;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;  
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.botonReiniciar:hover{
+.botonReiniciar:hover {
     border: 3px solid rgb(10, 163, 10);
     background-color: white;
     color: rgb(10, 163, 10);
     cursor: pointer;
 }
 
-.verde{
+.verde {
     background-color: rgb(10, 163, 10);
 }
 
-.amarillo{
+.amarillo {
     background-color: rgba(233, 233, 12, 0.918);
 }
 
-.gris{
+.gris {
     background-color: rgba(238, 224, 222, 0.644);
 }
 
-header{
-    margin-bottom: 8%;  
+header {
+    margin-bottom: 8%;
 }
 
-header > div{
+header>div {
     font-size: 25px;
     flex-direction: row;
     background: linear-gradient(rgb(45, 145, 95), #afc98f);
 }
 
-header > div > h1
-{
+header>div>h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-shadow: 5px 5px 10px rgb(64, 121, 64);
     margin: auto;
@@ -80,8 +84,7 @@ header > div > h1
     padding: 0px;
 }
 
-a
-{
+a {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-shadow: 5px 5px 10px rgb(64, 121, 64);
     margin: auto;
@@ -92,24 +95,13 @@ a
     text-decoration: none;
 }
 
-@media(max-width: 400px) {
-    .containerJuego{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .square{
-        width: 15vw;
-        height: 15vw;
-    }
+
+
+#containerTeclado {
+    height: 200px;
 }
 
-#containerTeclado{
-    height: 200px;
-  }
-  
-.filaTeclado{
+.filaTeclado {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -143,11 +135,11 @@ a
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: #249e06;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -162,8 +154,86 @@ a
     font-weight: bold;
 }
 
-.close-button:hover, .close-button:focus {
+.close-button:hover,
+.close-button:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+#btnPista {
+    border-radius: 25px;
+    border-color: #bbd49d;
+    background-color: rgb(240, 209, 33);
+    background: linear-gradient(to bottom right, rgb(240, 209, 33), rgb(248, 245, 71));
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.containerPista{
+    height: 30px;
+    width: 200px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+
+    /* Ajusta el ancho del contenedor del juego para que se ajuste a la pantalla */
+    .containerJuego {
+        padding: 5px;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #containerTeclado {}
+
+    /* Alinea los elementos del teclado en columnas en lugar de filas para dispositivos móviles */
+    .filaTeclado {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto 8px;
+        touch-action: manipulation;
+    }
+
+
+
+    /* Haz que los botones del teclado sean más grandes y fáciles de tocar en dispositivos móviles */
+    .filaTeclado button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 8vw;
+        height: 3vh;
+        font-size: 2vw;
+        margin: 2px;
+        gap: 2rem;
+    }
+
+    .square {
+        width: 50px;
+        height: 50px;
+        border: none;
+        background-color: rgb(233, 221, 221);
+        outline: none;
+        font-size: 50px;
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+    }
+
+
 }

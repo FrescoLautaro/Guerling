@@ -1,16 +1,16 @@
-body{
+body {
     margin: 0px;
     background-color: #bbd49d;
     font-family: system-ui, -apple-sistem, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-header > div{
+header>div {
     font-size: 25px;
     flex-direction: row;
     background: linear-gradient(rgb(45, 145, 95), #bbd49d);
 }
-header > div > h1
-{
+
+header>div>h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-shadow: 5px 5px 10px rgb(64, 121, 64);
     margin: auto;
@@ -20,12 +20,11 @@ header > div > h1
     padding: 0px;
 }
 
-header:hover{
+header:hover {
     color: rgb(240, 209, 33);
 }
 
-a
-{
+a {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-shadow: 5px 5px 10px rgb(64, 121, 64);
     margin: auto;
@@ -36,8 +35,7 @@ a
     text-decoration: none;
 }
 
-#buttons
-{
+.caja-cartas {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,24 +46,23 @@ a
     gap: 10px;
 }
 
-#jugar{
+
+#jugar {
     border: solid rgb(22, 24, 21) 4px;
     border-radius: 25px;
     background-color: rgb(46, 219, 11);
-    background: linear-gradient(to bottom right, rgb(46, 219, 11), rgb(143, 233, 70));;
+    background: linear-gradient(to bottom right, rgb(46, 219, 11), rgb(143, 233, 70));
     border-color: rgb(22, 24, 21);
     color: rgb(3, 1, 15);
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 30px;
-    position: relative;
+    font-size: 25px;
     top: -50px;
 }
 
-#registro
-{
+#registro {
     border: solid rgb(22, 24, 21) 4px;
     border-radius: 25px;
     border-color: rgb(22, 24, 21);
@@ -76,13 +73,11 @@ a
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 30px;
-    position: relative;
+    font-size: 25px;
     top: -50px;
 }
 
-#sobrenosotros
-{
+#sobrenosotros {
     border: solid rgb(22, 24, 21) 4px;
     border-radius: 25px;
     border-color: rgb(22, 24, 21);
@@ -93,18 +88,16 @@ a
     text-align: center;
     text-decoration-style: none;
     display: inline-block;
-    font-size: 30px;
-    position: relative;
+    font-size: 25px;
     top: -50px;
 }
 
-footer
-{
+footer {
     margin-bottom: 0px;
     text-align: center;
 }
-#Tittle
-{
+
+#Tittle {
     width: 300px;
     background-color: rgb(255, 255, 255);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -112,8 +105,8 @@ footer
     margin: 10px;
     padding: 25px;
 }
-.pagina
-{
+
+.pagina {
     height: 70vh;
     width: 100%;
     display: flex;
@@ -121,13 +114,12 @@ footer
     justify-content: center;
 }
 
-#login
-{
+#login {
     margin: 5px;
 
 }
-.contenedor
-{
+
+.contenedor {
     display: flex;
     align-items: center;
     text-align: center;
@@ -139,24 +131,26 @@ footer
     background-color: rgb(218, 218, 218);
 }
 
-input
-{
+input {
     border-color: rgb(240, 209, 33);
     align-items: center;
-    width: 15vw;    
+    width: 15vw;
     height: 20px;
 }
 
-#usuario{
+#usuario {
     margin: 20px;
 }
-#contraseña{
+
+#contraseña {
     margin: 40px;
 }
-.barra{
+
+.barra {
     margin: 10px;
 }
-#boton{
+
+#boton {
     border-radius: 25px;
     border-color: #bbd49d;
     background-color: rgb(240, 209, 33);
@@ -169,120 +163,98 @@ input
     font-size: 20px;
 }
 
-label{
+label {
     font-size: 17px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
- /** Iconos **/
-img{
-    height:250px;
-    width: 250px;  
-    border-radius: 50%;  
-    margin-left: 15px;
-    margin-right: 15px;
+/** Iconos **/
+
+img {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+
 }
-h3{
-    font-family: 'Times New Roman', Times, serif;    
+
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     text-align: center;
     max-width: 600px;
     margin: auto;
     padding-top: 70px;
     background: linear-gradient(to right, #2d9b64,
-                    #c28f21, #59750d, #abb92b);
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
+            #c28f21, #59750d, #abb92b);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
-#titulo{
+
+#titulo {
     font-size: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(to right, #096838,
-                    #664809, #59750b, #88941f);
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
+            #664809, #59750b, #88941f);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
-.register{
+.register {
     margin-top: 150px;
     color: black;
-    font-family:Georgia, 'Times New Roman', Times, serif
+    font-family: Georgia, 'Times New Roman', Times, serif
 }
-
 
 
 /** Inicio**/
-.carta1{
+.carta {
     width: 15vw;
     height: 40vh;
     background-color: rgb(46, 219, 11);
-    border: solid rgb(60, 155, 5) 4px;
+    border: solid rgb(0, 0, 0) 4px;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 400ms ease;
     flex-direction: column;
+    
 }
 
-.carta1:hover{
+.carta:nth-child(2){
+    background-color: rgb(225, 225, 22);
+}
+
+.carta:nth-child(3){
+    background-color: rgb(170, 170, 162);
+}
+
+
+
+
+.carta:hover {
     box-shadow: 5px 5px 20px grey;
     transform: translateY(-3%);
 }
 
 
-.carta2:hover{
-    box-shadow: 5px 5px 20px grey;
-    transform: translateY(-3%);
-}
-
-
-.carta3:hover{
-    box-shadow: 5px 5px 20px grey;
-    transform: translateY(-3%);
-}
-
-.carta2{
-    width: 15vw;
-    height: 40vh;
-    background-color: rgb(240, 209, 33);
-    border: solid rgb(163, 139, 1) 4px;
-    border-radius: 10px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    transition: all 400ms ease;
-    flex-direction: column;
-}
-
-.carta3{
-    width: 15vw;
-    height: 40vh;
-    background-color: #636363;
-    border: solid rgb(22, 24, 21) 4px;
-    border-radius: 10px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    transition: all 400ms ease;
-    flex-direction: column;
-}
 
 /** Categorias: **/
 
 
-.categoriaTitulo{
+.categoriaTitulo {
     text-align: center;
     justify-content: center;
     font-size: 3rem;
-    
+
 
 }
 
 /** Ciencia**/
-.carta5{
+.carta5 {
     width: 15vw;
     height: 40vh;
     background-color: #0e8d03;
@@ -294,14 +266,14 @@ h3{
     transition: all 400ms ease;
     flex-direction: column;
     text-align: center;
-    
+
 }
 
 /** Historia**/
-.carta6{
+.carta6 {
     width: 15vw;
     height: 40vh;
-    background-color:rgb(230, 245, 19) ;
+    background-color: rgb(230, 245, 19);
     border: solid rgb(22, 24, 21) 4px;
     border-radius: 10px;
     align-items: center;
@@ -314,7 +286,7 @@ h3{
 
 /** Geografia**/
 
-.carta7{
+.carta7 {
     width: 15vw;
     height: 40vh;
     background-color: rgb(75, 57, 238);
@@ -329,7 +301,7 @@ h3{
 
 
 /** Informatica**/
-.carta8{
+.carta8 {
     width: 15vw;
     height: 40vh;
     background-color: #c416f0;
@@ -342,7 +314,8 @@ h3{
     flex-direction: column;
 }
 
-.contenedor-general{
+
+.contenedor-general {
     height: 89vh;
     width: 100%;
     display: flex;
@@ -351,45 +324,36 @@ h3{
     text-align: center;
 }
 
-.carta5:hover{
+
+.carta5:hover {
     box-shadow: 5px 5px 20px grey;
     transform: translateY(-3%);
 }
 
-.carta6:hover{
+.carta6:hover {
     box-shadow: 5px 5px 20px grey;
     transform: translateY(-3%);
 }
 
-.carta7:hover{
+.carta7:hover {
     box-shadow: 5px 5px 20px grey;
     transform: translateY(-3%);
 }
 
-.carta8:hover{
+.carta8:hover {
     box-shadow: 5px 5px 20px grey;
     transform: translateY(-3%);
 }
 
-.carta1 img{
-    width: 100px;
-}
 
-.carta2 img{
-    width: 100px;
-}
 
-.carta3 img{
-    width: 100px;
-}
 
 
 /** Botones: **/
 
 
-#ciencia
-{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+#ciencia {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border: 5px solid black;
     border-radius: 25px;
     border-color: #000000;
@@ -400,15 +364,14 @@ h3{
     text-align: center;
     text-decoration-style: none;
     display: inline-block;
-    font-size: 40px;
+    font-size: 30px;
     position: relative;
     top: -50px;
     margin-top: 70px;
 }
 
-#historia
-{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+#historia {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border: 5px solid black;
     border-radius: 25px;
     border-color: #000000;
@@ -425,9 +388,8 @@ h3{
     margin-top: 70px;
 }
 
-#geografia
-{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+#geografia {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border: 5px solid black;
     border-radius: 25px;
     border-color: #000000;
@@ -444,9 +406,8 @@ h3{
     margin-top: 70px;
 }
 
-#informatica
-{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+#informatica {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border: 5px solid black;
     border-radius: 25px;
     border-color: #000000;
@@ -463,7 +424,7 @@ h3{
     margin-top: 70px;
 }
 
-.containerCategoria{
+.containerCategoria {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -472,10 +433,10 @@ h3{
     gap: 25px;
 }
 
-.planta{
-    height:100px;
-    width: 100px;  
-    border-radius: 50%;  
+.planta {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
     margin-left: 15px;
     margin-right: 15px;
     text-align: center;
@@ -483,37 +444,37 @@ h3{
 }
 
 
-.castillo{
-    height:100px;
-    width: 100px;  
-    border-radius: 50%;  
+.castillo {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
     margin-left: 15px;
     margin-right: 15px;
     text-align: center;
     justify-content: center;
 }
 
-.planeta{
-    height:100px;
-    width: 100px;  
-    border-radius: 50%;  
+.planeta {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
     margin-left: 15px;
     margin-right: 15px;
     text-align: center;
     justify-content: center;
 }
 
-.chip{
-    height:100px;
-    width: 100px;  
-    border-radius: 50%;  
+.chip {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
     margin-left: 15px;
     margin-right: 15px;
     text-align: center;
     justify-content: center;
 }
 
-.containerCategoria{
+.containerCategoria {
     display: flex;
     height: 60vh;
     width: 100%;
@@ -523,19 +484,23 @@ h3{
 }
 
 
-.containerCartas{
+.containerCartas {
     display: flex;
     flex-direction: row;
     height: 100vh;
     width: 80vw;
     align-items: center;
     justify-content: space-evenly;
-    
+
 }
+
+
+
+
 
 @media(max-width: 768px) {
-    .containerCategoria{
-      
+
+    .containerCategoria {
         gap: 10px;
         align-items: center;
         display: flex;
@@ -543,21 +508,25 @@ h3{
         height: 100%;
         width: 100%;
         justify-content: space-around;
-      
-        
+
+
     }
-h2{
-    font-size: 50px;
-    position: relative;
-    top: -100px;
-    text-align: center;
-}
-    .containerCartas{
+
+    
+
+    h2 {
+        font-size: 50px;
+        position: relative;
+        top: -100px;
+        text-align: center;
+    }
+
+    .containerCartas {
         display: flex;
         flex-direction: column;
     }
- 
-    button{
+
+    button {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -568,28 +537,20 @@ h2{
         padding-right: 1rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
-        
+
     }
-    .carta5{
+
+    .carta5 {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 50vh !important;
         height: 50vh;
         margin-top: 2rem;
-        
+
     }
 
-    .carta6{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 50vh !important;
-        height: 50vh;
-        margin-top: 2rem;
-    }
-
-    .carta7{
+    .carta6 {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -598,7 +559,7 @@ h2{
         margin-top: 2rem;
     }
 
-    .carta8{
+    .carta7 {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -606,11 +567,22 @@ h2{
         height: 50vh;
         margin-top: 2rem;
     }
-    .square{
+
+    .carta8 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vh !important;
+        height: 50vh;
+        margin-top: 2rem;
+    }
+
+    .square {
         width: 15vw;
         height: 15vw;
     }
-    .planta{
+
+    .planta {
         width: 90px;
         height: 90px;
         justify-content: center;
@@ -619,7 +591,7 @@ h2{
         margin-bottom: auto;
     }
 
-    .planeta{
+    .planeta {
         width: 90px;
         height: 90px;
         justify-content: center;
@@ -628,7 +600,7 @@ h2{
         margin-bottom: auto;
     }
 
-    .castillo{
+    .castillo {
         width: 90px;
         height: 90px;
         justify-content: center;
@@ -637,7 +609,7 @@ h2{
         margin-bottom: auto;
     }
 
-    .chip{
+    .chip {
         width: 90px;
         height: 90px;
         justify-content: center;
@@ -646,12 +618,15 @@ h2{
         margin-bottom: auto;
     }
 
-   
-    
 }
+
+
+
+
+
 @media(max-width: 375px) {
-    .containerCategoria{
-      
+    .containerCategoria {
+
         gap: 10px;
         align-items: center;
         display: flex;
@@ -659,22 +634,25 @@ h2{
         height: 100%;
         width: 100%;
         justify-content: space-around;
-      
-        
+
+
     }
-h2{
-    font-size: 40px;
-    position: relative;
-    top: -180px;
-    text-align: center;
-}
-    .containerCartas{
+
+    h2 {
+        font-size: 40px;
+        position: relative;
+        top: -180px;
+        text-align: center;
+    }
+
+
+
+    .contenedor-general {
         display: flex;
         flex-direction: column;
-       
     }
- 
-    button{
+
+    button {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -685,28 +663,20 @@ h2{
         padding-right: 1rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
-        
+
     }
-    .carta5{
+
+    .carta5 {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 50vh !important;
         height: 50vh;
         margin-top: 2rem;
-        
+
     }
 
-    .carta6{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 50vh !important;
-        height: 50vh;
-        margin-top: 2rem;
-    }
-
-    .carta7{
+    .carta6 {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -715,7 +685,7 @@ h2{
         margin-top: 2rem;
     }
 
-    .carta8{
+    .carta7 {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -723,11 +693,22 @@ h2{
         height: 50vh;
         margin-top: 2rem;
     }
-    .square{
+
+    .carta8 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vh !important;
+        height: 50vh;
+        margin-top: 2rem;
+    }
+
+    .square {
         width: 15vw;
         height: 15vw;
     }
-    .planta{
+
+    .planta {
         width: 90px;
         height: 90px;
         justify-content: center;
@@ -736,7 +717,7 @@ h2{
         margin-bottom: auto;
     }
 
-    .planeta{
+    .planeta {
         width: 90px;
         height: 90px;
         justify-content: center;
@@ -745,7 +726,7 @@ h2{
         margin-bottom: auto;
     }
 
-    .castillo{
+    .castillo {
         width: 90px;
         height: 90px;
         justify-content: center;
@@ -754,7 +735,7 @@ h2{
         margin-bottom: auto;
     }
 
-    .chip{
+    .chip {
         width: 90px;
         height: 90px;
         justify-content: center;
@@ -763,6 +744,97 @@ h2{
         margin-bottom: auto;
     }
 
-   
-    
+
+
 }
+
+/** Principal **/
+
+@media (max-width: 430px) {
+    .caja-cartas {
+      width: 100%;
+      background-color: antiquewhite;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    .carta {
+      height: 25vh;
+      width: 70vw;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    
+    img{
+        position: relative;
+        top : 20px;
+
+    }
+
+    .button{
+        width: 50vw;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    h2{
+        font-size: 20px;
+        
+
+    }
+  }
+
+
+  
+@media (max-width: 375px) {
+    .caja-cartas {
+      width: 100%;
+      background-color: antiquewhite;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    .carta {
+      height: 25vh;
+      width: 70vw;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    
+    img{
+        position: relative;
+        top : 20px;
+        width: 50px;
+        object-fit: contain;
+
+
+    }
+
+    .button{
+        width: 50vw;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    h2{
+        font-size: 20px;
+        
+
+    }
+
+  }
+
+
+

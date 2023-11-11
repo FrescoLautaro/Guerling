@@ -1,0 +1,399 @@
+body {
+    margin: 0px;
+    background-color: #bbd49d;
+    font-family: system-ui, -apple-sistem, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header>div {
+    font-size: 25px;
+    flex-direction: row;
+    background: linear-gradient(rgb(45, 145, 95), #bbd49d);
+}
+
+header>div>h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 5px 5px 10px rgb(64, 121, 64);
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    color: rgb(240, 33, 33);
+    padding: 0px;
+}
+
+header:hover {
+    color: rgb(240, 209, 33);
+}
+
+a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 5px 5px 10px rgb(64, 121, 64);
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    color: rgb(240, 209, 33);
+    padding: 0px;
+    text-decoration: none;
+}
+
+.caja-cartas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    gap: 10px;
+}
+
+#jugar {
+    border: solid rgb(22, 24, 21) 4px;
+    border-radius: 25px;
+    background-color: rgb(46, 219, 11);
+    background: linear-gradient(to bottom right, rgb(46, 219, 11), rgb(143, 233, 70));
+    border-color: rgb(22, 24, 21);
+    color: rgb(3, 1, 15);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    top: -50px;
+    height: 120px;
+    width: 180px;
+}
+
+#registro {
+    border: solid rgb(22, 24, 21) 4px;
+    border-radius: 25px;
+    border-color: rgb(22, 24, 21);
+    background-color: rgb(240, 209, 33);
+    background: linear-gradient(to bottom right, rgb(240, 209, 33), rgb(248, 245, 71));
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    top: -50px;
+    height: 120px;
+    width: 180px;
+}
+
+#sobrenosotros {
+    border: solid rgb(22, 24, 21) 4px;
+    border-radius: 25px;
+    border-color: rgb(22, 24, 21);
+    background-color: rgb(148, 148, 131);
+    background: linear-gradient(to bottom right, rgb(148, 148, 131), rgb(171, 172, 157));
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration-style: none;
+    display: inline-block;
+    font-size: 15px;
+    top: -50px;
+    height: 120px;
+    width: 180px;
+}
+
+footer {
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+#Tittle {
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 50px;
+    margin: 10px;
+    padding: 25px;
+}
+
+.pagina {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login {
+    margin: 5px;
+
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 20vw;
+    height: 45vh;
+    border-radius: 20px;
+    box-shadow: 50 50 50 10px;
+    background-color: rgb(218, 218, 218);
+}
+
+input {
+    border-color: rgb(240, 209, 33);
+    align-items: center;
+    width: 15vw;
+    height: 20px;
+}
+
+#usuario {
+    margin: 20px;
+}
+
+#contraseña {
+    margin: 40px;
+}
+
+.barra {
+    margin: 10px;
+}
+
+#boton {
+    border-radius: 25px;
+    border-color: #bbd49d;
+    background-color: rgb(240, 209, 33);
+    background: linear-gradient(to bottom right, rgb(240, 209, 33), rgb(248, 245, 71));
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+}
+
+label {
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/** Iconos **/
+img {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    padding-top: 70px;
+    background: linear-gradient(to right, #2d9b64,
+            #c28f21, #59750d, #abb92b);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#titulo {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #096838,
+            #664809, #59750b, #88941f);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.register {
+    margin-top: 150px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+
+
+/** Inicio**/
+.carta {
+    width: 15vw;
+    height: 40vh;
+    background-color: rgb(46, 219, 11);
+    border: solid rgb(0, 0, 0) 4px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 400ms ease;
+    flex-direction: column;
+
+}
+
+.carta:nth-child(2) {
+    background-color: rgb(225, 225, 22);
+}
+
+.carta:nth-child(3) {
+    background-color: rgb(170, 170, 162);
+}
+
+
+
+
+.carta:hover {
+    box-shadow: 5px 5px 20px grey;
+    transform: translateY(-3%);
+}
+
+
+.contenedor-general {
+    height: 89vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+/** Principal **/
+
+@media (max-width: 430px) {
+    .caja-cartas {
+        width: 100%;
+        background-color: #bbd49d;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carta {
+        height: 25vh;
+        width: 70vw;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    img {
+        position: relative;
+        top: 20px;
+
+    }
+
+    .button {
+        width: 50vw;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    h2 {
+        font-size: 20px;
+
+
+    }
+
+
+    #jugar {
+        border: solid rgb(22, 24, 21) 4px;
+        border-radius: 25px;
+        background-color: rgb(46, 219, 11);
+        background: linear-gradient(to bottom right, rgb(46, 219, 11), rgb(143, 233, 70));
+        border-color: rgb(22, 24, 21);
+        color: rgb(3, 1, 15);
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 7.5px;
+        top: -50px;
+        height: 60px;
+        width: 90px;
+    }
+
+    #registro {
+        border: solid rgb(22, 24, 21) 4px;
+        border-radius: 25px;
+        border-color: rgb(22, 24, 21);
+        background-color: rgb(240, 209, 33);
+        background: linear-gradient(to bottom right, rgb(240, 209, 33), rgb(248, 245, 71));
+        color: rgb(0, 0, 0);
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 7.5px;
+        top: -50px;
+        height: 60px;
+        width: 90px;
+    }
+
+    #sobrenosotros {
+        border: solid rgb(22, 24, 21) 4px;
+        border-radius: 25px;
+        border-color: rgb(22, 24, 21);
+        background-color: rgb(148, 148, 131);
+        background: linear-gradient(to bottom right, rgb(148, 148, 131), rgb(171, 172, 157));
+        color: rgb(0, 0, 0);
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration-style: none;
+        display: inline-block;
+        font-size: 7.5px;
+        top: -50px;
+        height: 60px;
+        width: 110px;
+    }
+}
+
+
+
+@media (max-width: 375px) {
+    .caja-cartas {
+        width: 100%;
+        background-color: #bbd49d;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carta {
+        height: 25vh;
+        width: 70vw;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    img {
+        position: relative;
+        top: 20px;
+        width: 50px;
+        object-fit: contain;
+
+
+    }
+
+    .button {
+        width: 50vw;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    h2 {
+        font-size: 20px;
+
+
+    }
+
+}
