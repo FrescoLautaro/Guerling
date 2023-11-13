@@ -116,14 +116,14 @@ function revisarIntento() {
     const intento = [...casillasFila].map(casilla => casilla.value.toLowerCase()).join('');
     let aciertos = 0;
 
-   for(let i = 0; i < palabra.length; i++) {
+  for(let i = 0; i < palabra.length; i++) {
         if(intento[i] === palabra[i]) {
             aciertos++;
-            casillasFila[i].classList.add('verde');
+            casillasFila[i].style.backgroundColor = 'rgb(10, 163, 10)';
         } else if (palabra.includes(intento[i])) {
-            casillasFila[i].classList.add('amarillo');
+            casillasFila[i].style.backgroundColor = 'rgba(233, 233, 12, 0.918)';
         } else {
-            casillasFila[i].classList.add('gris');
+            casillasFila[i].style.backgroundColor = 'rgba(238, 224, 222, 0.644)';
         }
     }
 
