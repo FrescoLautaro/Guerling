@@ -119,11 +119,11 @@ function revisarIntento() {
    for(let i = 0; i < palabra.length; i++) {
         if(intento[i] === palabra[i]) {
             aciertos++;
-            casillasFila[i].style.background-color = 'rgb(10, 163, 10)';
+            casillasFila[i].classList.add('verde');
         } else if (palabra.includes(intento[i])) {
-            casillasFila[i].style.background-color = 'rgba(233, 233, 12, 0.918)';
+            casillasFila[i].classList.add('amarillo');
         } else {
-            casillasFila[i].style.background-color = 'rgba(238, 224, 222, 0.644)';
+            casillasFila[i].classList.add('gris');
         }
     }
 
