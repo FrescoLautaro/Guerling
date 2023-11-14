@@ -364,7 +364,7 @@ h3 {
     text-align: center;
     text-decoration-style: none;
     display: inline-block;
-    font-size: 30px;
+    font-size: 20px;
     position: relative;
     top: -50px;
     margin-top: 70px;
@@ -382,7 +382,7 @@ h3 {
     text-align: center;
     text-decoration-style: none;
     display: inline-block;
-    font-size: 40px;
+    font-size: 20px;
     position: relative;
     top: -50px;
     margin-top: 70px;
@@ -400,7 +400,7 @@ h3 {
     text-align: center;
     text-decoration-style: none;
     display: inline-block;
-    font-size: 40px;
+    font-size: 20px;
     position: relative;
     top: -50px;
     margin-top: 70px;
@@ -418,7 +418,7 @@ h3 {
     text-align: center;
     text-decoration-style: none;
     display: inline-block;
-    font-size: 40px;
+    font-size: 20px;
     position: relative;
     top: -50px;
     margin-top: 70px;
@@ -513,14 +513,6 @@ h3 {
     }
 
     
-
-    h2 {
-        font-size: 50px;
-        position: relative;
-        top: -100px;
-        text-align: center;
-    }
-
     .containerCartas {
         display: flex;
         flex-direction: column;
@@ -634,18 +626,18 @@ h3 {
         height: 100%;
         width: 100%;
         justify-content: space-around;
+        margin-top: 200px;
 
 
     }
 
-    h2 {
-        font-size: 40px;
+    
+    
+    img{
         position: relative;
-        top: -180px;
-        text-align: center;
+        top : 10px;
+
     }
-
-
 
     .contenedor-general {
         display: flex;
@@ -673,6 +665,7 @@ h3 {
         width: 50vh !important;
         height: 50vh;
         margin-top: 2rem;
+        flex-direction: column-reverse;
 
     }
 
@@ -683,6 +676,8 @@ h3 {
         width: 50vh !important;
         height: 50vh;
         margin-top: 2rem;
+        flex-direction: column-reverse;
+
     }
 
     .carta7 {
@@ -692,6 +687,8 @@ h3 {
         width: 50vh !important;
         height: 50vh;
         margin-top: 2rem;
+        flex-direction: column-reverse;
+
     }
 
     .carta8 {
@@ -701,6 +698,8 @@ h3 {
         width: 50vh !important;
         height: 50vh;
         margin-top: 2rem;
+        flex-direction: column-reverse;
+
     }
 
     .square {
@@ -745,12 +744,13 @@ h3 {
     }
 
 
-
 }
+
+
 
 /** Principal **/
 
-@media (max-width: 430px) {
+@media (max-width: 414px) {
     .caja-cartas {
       width: 100%;
       background-color: antiquewhite;
@@ -759,6 +759,7 @@ h3 {
       justify-content: center;
       flex-direction: column;
       align-items: center;
+    
     }
     .carta {
       height: 25vh;
@@ -769,7 +770,7 @@ h3 {
     
     img{
         position: relative;
-        top : 20px;
+        top : 10px;
 
     }
 
@@ -783,11 +784,50 @@ h3 {
         
     }
 
-    h2{
-        font-size: 20px;
-        
+    .carta5 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vh !important;
+        height: 50vh;
+        margin-top: 2rem;
+        flex-direction: column-reverse;
 
     }
+
+    .carta6 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vh !important;
+        height: 50vh;
+        margin-top: 2rem;
+        flex-direction: column-reverse;
+
+    }
+
+    .carta7 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vh !important;
+        height: 50vh;
+        margin-top: 2rem;
+        flex-direction: column-reverse;
+
+    }
+
+    .carta8 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vh !important;
+        height: 50vh;
+        margin-top: 2rem;
+        flex-direction: column-reverse;
+
+    }
+    
   }
 
 
@@ -828,13 +868,53 @@ h3 {
         
     }
 
-    h2{
-        font-size: 20px;
-        
+
+    .carta5 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vh !important;
+        height: 50vh;
+        margin-top: 2rem;
+        flex-direction: column-reverse;
 
     }
 
-  }
+    .carta6 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vh !important;
+        height: 50vh;
+        margin-top: 2rem;
+        flex-direction: column-reverse;
+
+    }
+
+    .carta7 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vh !important;
+        height: 50vh;
+        margin-top: 2rem;
+        flex-direction: column-reverse;
+
+    }
+
+    .carta8 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vh !important;
+        height: 50vh;
+        margin-top: 2rem;
+        flex-direction: column-reverse;
+
+    }
+
+}
+
 
 
 
