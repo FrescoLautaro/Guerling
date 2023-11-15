@@ -46,6 +46,27 @@ a {
     gap: 10px;
 }
 
+#imagen {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+
+}
+
+img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+.imgS{
+    height: 200px;
+    width: 200px;
+}
+
+
 
 #jugar {
     border: solid rgb(22, 24, 21) 4px;
@@ -202,6 +223,8 @@ h3 {
     -webkit-background-clip: text;
 }
 
+
+
 .register {
     margin-top: 150px;
     color: black;
@@ -221,14 +244,14 @@ h3 {
     justify-content: center;
     transition: all 400ms ease;
     flex-direction: column;
-    
+
 }
 
-.carta:nth-child(2){
+.carta:nth-child(2) {
     background-color: rgb(225, 225, 22);
 }
 
-.carta:nth-child(3){
+.carta:nth-child(3) {
     background-color: rgb(170, 170, 162);
 }
 
@@ -511,8 +534,11 @@ h3 {
 
 
     }
+    .imgS{
+        height: 80px;
+        width: 80px;
+    }
 
-    
     .containerCartas {
         display: flex;
         flex-direction: column;
@@ -631,11 +657,11 @@ h3 {
 
     }
 
-    
-    
-    img{
+
+
+    img {
         position: relative;
-        top : 10px;
+        top: 10px;
 
     }
 
@@ -752,122 +778,38 @@ h3 {
 
 @media (max-width: 414px) {
     .caja-cartas {
-      width: 100%;
-      background-color: antiquewhite;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-    
+        width: 100%;
+        background-color: antiquewhite;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
     }
+
     .carta {
-      height: 25vh;
-      width: 70vw;
-      display: flex;
-      justify-content: space-evenly;
+        height: 25vh;
+        width: 70vw;
+        display: flex;
+        justify-content: space-evenly;
     }
-    
-    img{
+
+    img {
         position: relative;
-        top : 10px;
+        top: 10px;
 
     }
 
-    .button{
+    .button {
         width: 50vw;
         height: 8vh;
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        
-    }
-
-    .carta5 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 50vh !important;
-        height: 50vh;
-        margin-top: 2rem;
-        flex-direction: column-reverse;
 
     }
-
-    .carta6 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 50vh !important;
-        height: 50vh;
-        margin-top: 2rem;
-        flex-direction: column-reverse;
-
-    }
-
-    .carta7 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 50vh !important;
-        height: 50vh;
-        margin-top: 2rem;
-        flex-direction: column-reverse;
-
-    }
-
-    .carta8 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 50vh !important;
-        height: 50vh;
-        margin-top: 2rem;
-        flex-direction: column-reverse;
-
-    }
-    
-  }
-
-
-  
-@media (max-width: 375px) {
-    .caja-cartas {
-      width: 100%;
-      background-color: antiquewhite;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-    }
-    .carta {
-      height: 25vh;
-      width: 70vw;
-      display: flex;
-      justify-content: space-evenly;
-    }
-    
-    img{
-        position: relative;
-        top : 20px;
-        width: 50px;
-        object-fit: contain;
-
-
-    }
-
-    .button{
-        width: 50vw;
-        height: 8vh;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        
-    }
-
 
     .carta5 {
         display: flex;
@@ -917,4 +859,86 @@ h3 {
 
 
 
+@media (max-width: 375px) {
+    .caja-cartas {
+        width: 100%;
+        background-color: antiquewhite;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .carta {
+        height: 25vh;
+        width: 70vw;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    img {
+        position: relative;
+        top: 20px;
+        width: 50px;
+        object-fit: contain;
+
+
+    }
+
+    .button {
+        width: 50vw;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+
+    .carta5 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vh !important;
+        height: 50vh;
+        margin-top: 2rem;
+        flex-direction: column-reverse;
+
+    }
+
+    .carta6 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vh !important;
+        height: 50vh;
+        margin-top: 2rem;
+        flex-direction: column-reverse;
+
+    }
+
+    .carta7 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vh !important;
+        height: 50vh;
+        margin-top: 2rem;
+        flex-direction: column-reverse;
+
+    }
+
+    .carta8 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vh !important;
+        height: 50vh;
+        margin-top: 2rem;
+        flex-direction: column-reverse;
+
+    }
+
+}
